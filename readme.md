@@ -31,8 +31,8 @@ This is a big, ambitious project, and I won’t be able to deliver a feature-com
 - Plugin system (for things like third-party integrations or debugging support)
 - Moveable, resizable panes
 - IDE Features
-- Autocompletion
-- Refactoring
+  - Autocompletion
+  - Refactoring
 - Video/voice chat
 - Multiple key binding schemes
 - Color themes
