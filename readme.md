@@ -1,8 +1,8 @@
-# Senior Project Proposal: Vapor
+# Senior Project Proposal: Spark
 ## by Jeremy Dormitzer
 
 ### Abstract
-`Vapor` is a collaborative web-based code editor in the style of Google Docs. It aims to facilitate remote pair-programming and streamline the collaborative development process. Existing tools attempt to solve this issue, but they are proprietary, buggy, and usually locked behind a paywall. `Vapor` will be open-source, making it easy-to-host and hackable. I intend `Vapor` to be a complete collaborative development solution that allows multiple developers to code together in real-time. The project has two deliverables: the `Vapor` server and a `Vapor` web application. The server will be implemented using [`Node.js`](https://nodejs.org/en/), and the client will be implemented using the [`React`](https://facebook.github.io/react/) framework.
+`Spark` is a collaborative web-based code editor in the style of Google Docs. It aims to facilitate remote pair-programming and streamline the collaborative development process. Existing tools attempt to solve this issue, but they are proprietary, buggy, and usually locked behind a paywall. `Spark` will be open-source, making it easy-to-host and hackable. I intend `Spark` to be a complete collaborative development solution that allows multiple developers to code together in real-time. The project has two deliverables: the `Spark` server and a `Spark` web application. The server will be implemented using [`Node.js`](https://nodejs.org/en/), and the client will be implemented using the [`React`](https://facebook.github.io/react/) framework.
 
 ### Introduction
 Collaboration is a key part of the software business. Everyone, from undergraduates starting CMPT 201 to Senior Engineers building the next Facebook, utilizes pair programming and collaborative processes to maximize their productivity and gain insight into the software they write.
@@ -11,7 +11,7 @@ Pair programming works great when developers can sit next to each other and code
 
 Existing tooling for remote pairing lacks functionality, depends on external tools, or locks key features behind a paywall. Furthermore, these proprietary solutions don’t give developers access to the source code, limiting the extensibility and flexibility of the platform.
 
-I want to build an open source, extensible, web-based code editor that allows multiple developers to collaborate on a single source file - working title, `Vapor`. My hope is that by open-sourcing the application, I can build a community of developers to bring this idea to its full potential.
+I want to build an open source, extensible, web-based code editor that allows multiple developers to collaborate on a single source file - working title, `Spark`. My hope is that by open-sourcing the application, I can build a community of developers to bring this idea to its full potential.
 
 This is a big, ambitious project, and I won’t be able to deliver a feature-complete version by the end of next semester. For that reason, my senior project will focus on building the minimum viable product (MVP) version, and I will lay out “stretch goals” that I will pursue once the MVP is complete.
 
@@ -42,7 +42,7 @@ This is a big, ambitious project, and I won’t be able to deliver a feature-com
 - Desktop client built with Electron
 
 ### Background
-What follows is a brief history of real-time collaborative text editors, an analysis of `Vapor`'s place in the market, and a technical overview of the project.
+What follows is a brief history of real-time collaborative text editors, an analysis of `Spark`'s place in the market, and a technical overview of the project.
 
 #### History
 The idea of collaborative document editing has been around for nearly as long as the idea of the personal computer. The earliest documented implementation of a collaborative real-time editor was demonstrated by Douglas Engelbart in 1968, as a part of the aptly-name [Mother of All Demos](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos). Engelbart aimed to demonstrate the as-yet untapped potential of the personal computer as a platform for communication and data storage in addition to mere number-crunching. However, despite the demo's widespread influence, collaborative real-time editing did not take off for nearly 40 years. The first mainstream real-time collaborative editor was Writely, a web-based text editor launched in 2006. It was quickly [bought by Google](http://www.informationweek.com/google-acquires-writely-online-word-processing-service/d/d-id/1041208?), and is now known as Google Docs. It remains the most popular real-time collaborative editor in the world. However, it is not an effective tool for writing code, due to its lack of syntax highlighting, IDE features such as refactoring and autocompletion, and file tree management. In recent years, several products have sought to fill this gap. These include editor plugins such as [Floobits](https://floobits.com/) and web-based editors such as [Codeanywhere](https://codeanywhere.com/), [Cloud9](https://c9.io/), and [Kobra](https://kobra.io/#/), among others. 
@@ -53,7 +53,7 @@ The web-based solutions have several things in common:
 - They host their own servers internally, and require developers to connect to those servers to use the product
 - They hide some or all functionality behind a paywall
 
-This is where `Vapor` fits in. As an open-source project, anyone can host their own server. Additionally, anyone can access and modify the source code to suit their needs. This alone should be enough to make `Vapor` stand out in a crowded market. However, the real power of open-source is the community that can form around an open-source project. I hope to build an extended community of contributors and users that can help move the project forward and spread the word.
+This is where `Spark` fits in. As an open-source project, anyone can host their own server. Additionally, anyone can access and modify the source code to suit their needs. This alone should be enough to make `Spark` stand out in a crowded market. However, the real power of open-source is the community that can form around an open-source project. I hope to build an extended community of contributors and users that can help move the project forward and spread the word.
 
 #### Technical Details
 At a high level, the editor will be made up of a server and one or more clients. I plan on using [`Node.js`](https://nodejs.org/en/) to write the server, and the [`React`](https://facebook.github.io/react/) JavaScript framework to write the client. The server will not only serve the web app, but also allow access to one or more project directories living on the host machine. I will most likely implement this as a `workspace` directory that holds one or more `project` folders, each of which hold the source code for a different project.
@@ -86,7 +86,7 @@ I see a real need in the developer ecosystem for robust and open remote work too
 #### Plan of Work
 
 ##### User Stories and Mock-ups:
-A user story is an Agile development technique for defining the functionality of the finished product. They are typically written in the form, *"As a [type of user], I want [goal] so that [reason]"*. They are intended to express on at a high level a specific function of the application. They do not contain implementation details. I have already written the user stories for `Vapor`. You can see them on the [Trello board](https://trello.com/b/pREfdFQ7).
+A user story is an Agile development technique for defining the functionality of the finished product. They are typically written in the form, *"As a [type of user], I want [goal] so that [reason]"*. They are intended to express on at a high level a specific function of the application. They do not contain implementation details. I have already written the user stories for `Spark`. You can see them on the [Trello board](https://trello.com/b/pREfdFQ7).
 
 The mock-ups will be simple wireframe drawings of the application. I will need one at a minimum, showing the main editor view, and probably a few others showing other possible application states. I will figure out what mock-ups I need based on the user stories.
 
@@ -129,7 +129,7 @@ This is the meat of the project. Although I list it as one task, it will actuall
 **Deliverables:** For each user story, a set of passing unit tests and a section in the documentation.
 
 ##### Begin Community Building:
-This is extremely important to me. At this point, I should have a (mostly) working MVP application and I will be looking to build a community around `Vapor`. This means people using `Vapor` and people contributing the its development on Github. To do this, I will use social media and hopefully word-of-mouth to get people interested in the project. Specifically, I will write a blog post introducing the project and publish it to my website. I will also reach out to the Twitter community and online developer hubs like [Hacker News](news.ycombinator.com). I will also reach out to Westminster faculty and students, asking if anyone would like to get involved or start using `Vapor`. Finally, and most importantly, I will write a robust `README` file for the Github repository, as well as a `LICENCE` file detailing the project's open-source license (probably the [MIT license](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html) and a `CONTRIBUTING` file detailing contribution guidelines such as pull request formats and contact.
+This is extremely important to me. At this point, I should have a (mostly) working MVP application and I will be looking to build a community around `Spark`. This means people using `Spark` and people contributing the its development on Github. To do this, I will use social media and hopefully word-of-mouth to get people interested in the project. Specifically, I will write a blog post introducing the project and publish it to my website. I will also reach out to the Twitter community and online developer hubs like [Hacker News](news.ycombinator.com). I will also reach out to Westminster faculty and students, asking if anyone would like to get involved or start using `Spark`. Finally, and most importantly, I will write a robust `README` file for the Github repository, as well as a `LICENCE` file detailing the project's open-source license (probably the [MIT license](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html) and a `CONTRIBUTING` file detailing contribution guidelines such as pull request formats and contact.
 
 I understand that this is my senior project, and that it may seem to be inappropriate to ask for community contributions. However, I would argue that actually writing the code is not really the point of the project - my goal is to build and maintain a large, open-source software project, and involving the community will give me real-world leadership, marketing, and development experience.
 
@@ -146,7 +146,7 @@ At this point the project goals will be complete and the paper written. If I get
 **Deliverable:** Passing unit tests and documentation for each user story.
 
 #### Preliminary Work
-As stated above, I have already written user stories for the MVP features. They can be found on the [`Vapor` Trello board](https://trello.com/b/pREfdFQ7).
+As stated above, I have already written user stories for the MVP features. They can be found on the [`Spark` Trello board](https://trello.com/b/pREfdFQ7).
 
 #### Timeline
 The Agile methodology is all about flexibility. Sprints are usually not planned very far in advance, except in very general detail. This allows the developers (i.e., me) to pivot easily as requirements or contexts change. Therefore, the following timeline should be taken as merely a guideline, and I will determine the actual dates and deliverables for each sprint at the end of the previous sprint, based on the plan of work proposed above. As this is a major project, I will start working on it this semester rather than waiting until next semester.
